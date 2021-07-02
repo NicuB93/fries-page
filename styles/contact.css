@@ -1,0 +1,120 @@
+.nav-background {
+  background: url(../img/fries/7.jpg);
+}
+
+#form * {
+  border: 0;
+}
+#form *:focus {
+  outline: none;
+}
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+#name,
+#email {
+  border-bottom: 2px solid black;
+  padding: 10px 15px;
+  transition: border-bottom 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#name:focus,
+#email:focus {
+  border-bottom: 2px solid rgb(218, 174, 33);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+#name::placeholder,
+#email::placeholder {
+  color: #11122b;
+}
+#name:focus::placeholder,
+#email:focus::placeholder {
+  height: 0;
+  color: #11122b;
+}
+
+#form textarea {
+  width: 100%;
+}
+
+#form button {
+  padding: 0.7rem 1rem;
+  background-color: #cea135;
+}
+
+label:focus {
+  height: 0;
+}
+
+.name,
+.email {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#form-text {
+  border: 2px solid black;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#form-text:focus {
+  border: 2px solid rgb(218, 174, 33);
+}
+
+i {
+  margin: 0;
+  color: #cea135;
+}
+
+.page-container {
+  padding: 0 10%;
+}
+.contact-img {
+  width: 100%;
+}
+
+.contact-and-form {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-details p {
+  text-align: right;
+}
+
+.submit-button {
+  width: 100%;
+  text-align: center;
+}
+
+label {
+  font-size: 12px;
+  margin: 0.3rem 0 0 1rem;
+  transition: opacity 0.3s ease-in-out;
+  color: #cea135;
+  visibility: hidden;
+  opacity: 0;
+}
+
+input:focus + label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(1rem);
+}

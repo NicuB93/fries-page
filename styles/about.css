@@ -1,0 +1,64 @@
+.nav-background {
+  background: url(../img/background/about-us.jpeg);
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: 75%;
+}
+
+.content p {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  font-size: 300;
+}
+
+.content img {
+  width: 50%;
+  margin: 1.3rem 1.3rem 0.3rem 0;
+  float: left;
+  border: 2px solid #cea135;
+}
+
+.fries-container > .fries-content > .fries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fries img {
+  width: 100%;
+  color: white;
+}
+
+.fries-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.fries-content {
+  width: 75%;
+}
+
+.fries-description {
+  padding-left: 1rem;
+}
+
+.fries-title {
+  font-size: 1.7rem;
+  color: #cea135;
+}
+
+.fries-description .description {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* // Responsive */
+.fries-container-responsive {
+  display: none;
+}

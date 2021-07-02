@@ -1,0 +1,20 @@
+.container {
+  padding: 1rem;
+}
+
+.nav-background {
+  background: url(../img/fries/4.jpg);
+}
+
+.fries-link {
+  text-decoration: none;
+}
+.fries-link:focus {
+  outline: none;
+}
+
+.fries-link h1::after {
+  font-family: "Font Awesome 5 Free";
+  content: " \f0c1";
+  font-weight: 900;
+}
